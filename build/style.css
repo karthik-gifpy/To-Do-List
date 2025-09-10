@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 3px 3px 10px  black;
+    border-top: 10px solid green;
+    border-bottom: 10px solid green;
+    align-items: center;
+}
+.todo{
+    display: flex;
+    padding: 1em;
+}
+.todo__value{
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    flex-grow: 1;
+}
+.todo:has(.todo__checkbox:checked){
+    color: black;
+    background: white;
+    text-decoration: line-through;
+    order: 1;
+}
